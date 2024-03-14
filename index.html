@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Face Comparison App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Upload Images to Compare Faces</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="image1" required>
+        <input type="file" name="image2" required>
+        <button type="submit">Compare</button>
+    </form>
+    {% if match is not None %}
+        <p>Do the images contain the same person? {{ 'Yes' if match else 'No' }}</p>
+    {% endif %}
+</body>
+</html>
