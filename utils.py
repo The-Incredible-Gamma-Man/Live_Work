@@ -1,8 +1,6 @@
 import cv2
 import numpy as np
-from PIL import Image
 import face_recognition
-import io
 
 def read_image(file_stream):
     # Convert the image file stream to a NumPy array
@@ -26,7 +24,5 @@ def get_face_encodings(image):
 
 def compare_faces(encodings1, encodings2):
     # Compare two lists of face encodings and return True if there are matches
-    # This assumes that each list of encodings is from the same person
-    # Adjust the tolerance parameter as needed
     matches = face_recognition.compare_faces(encodings1, encodings2, tolerance=0.6)
     return any(matches)
