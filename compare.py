@@ -7,7 +7,7 @@ def compare_faces_from_files(file_stream1, file_stream2):
 
     # Get the face encodings for each image
     encodings1 = get_face_encodings(image1)
-    encodings2 = get_face_encodings(image_image2)
+    encodings2 = get_face_encodings(image2)
 
     # Compare the faces and return the result
     return compare_faces(encodings1, encodings2)
