@@ -1,1 +1,69 @@
-/* Add your CSS styles here */
+/* Reset some basic elements */
+body, h1, form, button, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Apply a natural box layout model to all elements */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Main body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Center the form on the page */
+form {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form inputs */
+input[type='file'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Style the result paragraph */
+p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Add some spacing to the header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
